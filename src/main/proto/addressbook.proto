@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package ="de.freitag.stefan.protobuf.tutorial.addressbook";
+
+import "person.proto";
+
+message AddressBook{
+    string name = 1;
+    repeated Person person = 2;
+}
