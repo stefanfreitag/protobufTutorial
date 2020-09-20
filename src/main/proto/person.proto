@@ -14,11 +14,11 @@ message GetPersonRequest{
     int64 id = 1;
 }
 
-message GetPersonRespone{
+message GetPersonResponse{
     Person person = 1;
 }
 
 service PersonService{
-    rpc GetPerson (GetPersonRequest) returns (GetPersonRespone);
+    rpc GetPerson (GetPersonRequest) returns (GetPersonResponse);
 
 }
